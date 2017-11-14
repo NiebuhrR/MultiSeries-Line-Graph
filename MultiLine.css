@@ -1,0 +1,53 @@
+/* Quyen Ha and Marty Dang Project 2 css file */
+
+body{
+    background: white; 
+    color: #006
+}
+
+svg{
+    display: block;
+}
+
+.line { 
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+
+circle { 
+    fill: none;
+    stroke: black;
+    stroke-width: 1px;
+    opacity: 0;
+}
+
+select.first-opt-hidden option:first-of-type{
+    display:none;
+}
+
+#tooltip {
+    position: absolute;
+    width: 68px;
+    height: auto;
+    padding: 5px;
+    background-color: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+
+#tooltip.hidden {
+    display: none;
+}
+
+#tooltip p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+}

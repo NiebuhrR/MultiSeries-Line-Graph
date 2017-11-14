@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- Project 2 HTML file
+     Quyen Ha and Marty Dang
+-->
+
+<head>
+
+  <meta charset="utf-8">
+  
+  <title>Multi-Line</title>
+
+  <!-- D3 from Murray == 4.5, with a local copy-->
+  <script type="text/javascript" src="d3.js"></script>
+
+  <!-- the css is in an external file -->
+  <link rel="stylesheet" type="text/css" href="MultiLine.css">
+  
+</head>
+
+
+<body>
+    <!-- the js is in an external file -->
+    <script type="text/javascript" src="MultiLine.js"></script>
+
+    <!-- div to hold the title, drop down menu, and home button -->
+    <div id="multilines">
+      <div id="controls">
+	<p>
+	  Stock Name:
+	  <br>
+	  <select id="stock">
+	    <optgroup id="stockDropDown">
+	      <option selected disabled hidden value=''>--select an option--</option> 
+	    </optgroup>
+	  </select>
+	</p>
+
+	<!-- div to hold the Home button -->
+	<div id="buttonContainer">
+	  <p>
+	    Click "Home" to return to original multiline graph:
+	    <br>
+	    <button id="returnHome" type="button">Home</button>
+	    <br>
+	  <p>
+	    Use the drop down menu to pick which stock you want to
+	    investigate. Trace the stock's closing price by hovering 
+	    over the line. Return to original multiline graph by pressing
+	    Home.
+	  </p>
+	  </p>
+	</div>
+      </div>
+    </div>
+</body>
+
+</html>
+

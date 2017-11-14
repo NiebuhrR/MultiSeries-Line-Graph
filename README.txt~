@@ -1,0 +1,32 @@
+Quyen Ha and Marty Dang
+
+Project 2: Visualization of stocks in the Dow Jones Index
+Part 1: Multiseries Line graph
+
+A data visualization of stocks provided by the UCI Machine Learning Respository. 
+
+https://archive.ics.uci.edu/ml/datasets/Dow+Jones+Index
+
+CSCI 3665: From Data to Visualization. 
+
+The full list of codes that we borrow for our project is as followed:
+
+multiseries line graph: https://bl.ocks.org/mbostock/3884955
+mouseover line effect: https://bl.ocks.org/larsenmtl/e3b8b7c2ca4787f77d78f58d41c3da91
+nesting data: http://learnjsdata.com/group_data.html 
+
+For the multiseries line graph, adapting mbostock's code is fairly straightforward,
+the most challenging part is understanding how d3 nesting works, and how to data's keys
+or objects within values after nesting. We found that it is really helpful to group
+the lines and axes into smaller groups, which makes updating easier, rather than
+directly adding everything to the svg. 
+
+For the drop down menu, we adapt Murray's codes from class. This is fairly familiar 
+given past assignment; the only thing worth noting is to be mindful of which elements
+or effects need to be removed for updating. This process is much easier when we have
+groups of elements, rather than adding everything to the svg as previously discussed.
+
+For the mouseover line effect of the multiseries line chart, note that it is possible 
+to have tracing for multiple lines. Instead of looping over all the lines like the 
+sample code (provided by larsenmtl), we changed lines[i] to lines[0] because we only
+want to examine the closing price of each stock. 
